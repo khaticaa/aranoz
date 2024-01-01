@@ -29,6 +29,256 @@
 // }
 
 
+.section1{
+    width: 100%;
+    padding: 70px 0;
+    .feature{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        h2{
+           text-align: center;
+           
+        }
+
+
+    }
+    .section1-o{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin-top: 70px;
+        .s1topleft{
+            width: 55%;
+            padding: 30px 0 0 30px;
+            background-color: #f8fbff;
+            display: flex;
+
+    
+            position: relative;
+
+            &:hover {
+                
+                &:after {
+                    content: "Explore Now>>";
+                    position: absolute;
+                    bottom:  50px;
+                    // left: 0;
+                    // right: -100px;
+                   color: red;
+                    padding: 15px;
+                    text-align: center;
+                    font-size: 16px;
+                    font-weight: bold;
+                   
+                }
+
+              
+
+             
+            }
+        }
+    }
+
+           
+            .left{
+                width: 45%;
+                p{
+                  
+                 
+                    font-size: 16px;
+                }
+                h3{
+                    
+                    font-size: 22px;
+                    font-weight: bold;
+                }
+            }
+            .right{
+                width: 55%;
+                img{
+                    width: 98%;
+                }
+            }
+        }
+        .s1topright{
+            margin-left: 20px;
+            width: 42%;
+            padding: 30px 0 0 30px;
+            background-color: #f8fbff;
+            display: flex;
+
+
+            position: relative;
+
+            &:hover {
+                
+                &:after {
+                    content: "Explore Now>>";
+                    position: absolute;
+                    bottom:  50px;
+                    // left: 0;
+                    // right: -100px;
+                   color: red;
+                    padding: 15px;
+                    text-align: center;
+                    font-size: 16px;
+                    font-weight: bold;
+                   
+                }}
+
+
+
+
+            
+            .left{
+                width: 50%;
+                
+                p{
+                   
+                    font-size: 16px;
+                }
+                h3{
+             
+                    font-size: 22px;
+                   
+                }
+            }
+            .right{
+                width: 49%;
+                img{
+                    width: 100%;
+                }
+            }
+        }
+        .s1botleft{
+            padding: 30px 0 0 30px;
+            background-color: #f8fbff;
+            display: flex;
+            flex-direction: column;
+            margin-top: 30px;
+            width: 42%;
+
+
+            position: relative;
+
+            &:hover {
+                
+                &:after {
+                    content: "Explore Now>>";
+                    position: absolute;
+                    bottom:  50px;
+                    // left: 0;
+                    // right: -100px;
+                   color: red;
+                    padding: 15px;
+                    text-align: center;
+                    font-size: 16px;
+                    font-weight: bold;
+                   
+                }}
+            .top{
+                p{
+                   
+                    font-size: 16px;
+                }
+                h3{
+                 
+                    font-size: 22px;
+                    font-weight: bold;
+                }
+            }
+            .bottom{
+                width: 100%;
+                display: flex;
+                justify-content: flex-end;
+                img{
+                    width: 49%;
+                    padding-right: 20px;
+                }
+            }
+        }
+        .s1botright{
+            margin-left: 20px;
+            width: 50%;
+            padding: 30px 0 0 30px;
+            background-color: #f8fbff;
+
+            position: relative;
+
+            &:hover {
+                
+                &:after {
+                    content: "Explore Now>>";
+                    position: absolute;
+                    bottom:  50px;
+                    // left: 0;
+                    // right: -100px;
+                   color: red;
+                    padding: 15px;
+                    text-align: center;
+                    font-size: 16px;
+                    font-weight: bold;
+                   
+                }}
+         
+            display: flex;
+            flex-direction: column;
+            margin-top: 30px;
+            gap: 15px;
+            .top{
+                p{
+                    
+                    font-size: 16px;
+                }
+                h3{
+                    font-size: 22px;
+                    font-weight: bold;
+                }
+            }
+            .bottom{
+               
+                width: 100%;
+                display: flex;
+                justify-content: flex-end;
+                img{
+                    width: 95%;
+                    padding-right: 20px;
+                }
+            }
+        }
+
+
+
+@media only screen and (max-width: 768px) {
+    .section1 {
+        .section1-o {
+            gap: 20px;
+            .s1topleft,
+            .s1topright,
+            .s1botleft,
+            .s1botright {
+                padding: 20px 0 0 20px;
+
+                .left,
+                .right,
+                .top,
+                .bottom {
+                    width: 100%;
+                }
+            }
+
+            .s1topright,
+            .s1botright {
+                // margin-left: 20;
+// padding-left: 40px ;                
+            }
+        }
+    }
+}
+
 
 
 nav {
@@ -280,11 +530,27 @@ nav {
                  }
 
                 }
+
+                .Crud{
+                    button{
+                        color: red;
+                        border: none;
+                        background-color: #fde2e2;
+                    }
+                }
+
+               
             }
         }
     }
 
-
+#sortButton{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border: none;
+    background-color: #ff3368;
+    padding: 0px 20px;
+}
 
 .section5{
     background-image:url('../images/s3.png.webp') ;
@@ -708,62 +974,9 @@ footer{
         }
     }
 
-    .section2{width: 100%;
-        .s2-o{
-            .s2top{}
-            .s2topbot{}
-            .s2bottom{
-               
-            }   .cart1{
-                .cart11{
-                    height: 340px;
-                    .text{
-                        width: 90%;
-                        left: 15px;
-                    } 
-                    .img{
-                    left: 37px;
-                    width: 65%;
-                    }
-                }
-                .cart121{
-                    height: 340px;
-                    .text{
-                        width: 90%;
-                        left: 15px;
-                    } 
-                    .img{
-                    width: 49%;
-                    left: 56px;
-                    }
-                }
-            }
-            .cart12{
-                .cart11{
-                    height: 340px;
-                    .text{
-                        width: 90%;
-                        left: 15px;
-                    } 
-                    .img{
-                    left: 2px;
-                    width: 100%;
-                    }
-                }
-                .cart121{
-                    height: 340px;
-                    .text{
-                        width: 90%;
-                        left: 15px;
-                    } 
-                    .img{
-                    width: 60%;
-                    left: 56px;
-                    }
-                }
-            }
-        }
-    }
+   .section2{
+    .Crud{display: none;}
+   }
 
     .section5{
         .s5-o{
@@ -848,42 +1061,7 @@ footer{
 
 @media screen and (max-width: 320px) {
 
-    .section1{width: 100%;
-        .s1-o{
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            flex-direction: column;
-
-            .s1top{
-                text-align: center;
-                color: red
-            }
-            .s1bottom{
-              display: grid;
-              grid-template-columns: repeat(1.1fr);
-              align-items: center;
-              justify-content: center;
-
-
-           .cart1  .cart11{
-                width: 100%;
-                
-              }
-             .cart1 .cart121{
-                width: 100%;
-              
-              }
-              .cart12  .cart121{
-                width: 100%;
-                
-              }
-             .cart12 .cart11{
-                width: 100%;
-                
-              }
-
-            }}} 
+  
 
 
     // .banner{
@@ -908,6 +1086,7 @@ footer{
 
     .section2{width: 100%;
         .s2-o{
+            .Crud{display: none;}
             .s2top{}
             .s2topbot{}
             .s2bottom{
@@ -1043,3 +1222,64 @@ footer{
     }
     
 }
+  
+@media screen and (max-width: 568px) {
+    .container{
+        // max-width: 1200px;
+    }
+    .section1{
+        .feature{
+            h2{
+                font-size: 25px;
+            }
+        }
+        .section1-o{
+            flex-direction: column;
+            gap: 30px;
+            .s1topleft{
+                width: 100%;
+                flex-direction: column;
+                .right{
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    width: 100%;
+                    img{
+                        width: 50%;
+                    }
+                }
+            }
+            .s1topright{
+                width: 100%;
+                flex-direction: column;
+                .right{
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    width: 100%;
+                    img{
+                        width: 45%;
+                    }
+                }
+            }
+            .s1botleft{
+                width: 100%;
+                .bottom{
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                }
+            }
+            .s1botright{
+                width: 100%;
+                .bottom{
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                }
+            }
+        }
+    }
+    
+}
+
