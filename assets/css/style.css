@@ -841,6 +841,10 @@ footer .f-o .ffxt .inputtxt .subscribenow {
     width: 60%;
   }
 }
+.topbutton {
+  border: none;
+}
+
 @media (max-width: 991px) {
   .navbar {
     display: flex;

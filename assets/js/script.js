@@ -159,3 +159,21 @@ menu.addEventListener("click", () => {
 //     nav.style.background = "";
 //   }
 // });
+
+
+let TopButton=document.querySelector(".topbutton");
+
+window.addEventListener("scroll", () => {
+  if (window.scrollY > 300) {
+    TopButton.style.display = "block";
+  } else {
+    TopButton.style.display = "";
+  }
+});
+
+TopButton.addEventListener("click", () => {
+  window.scroll({
+    top: 0,
+    behavior: "smooth"
+  })
+})
